@@ -1,0 +1,17 @@
+@import '../../../assets/styles/variables';
+
+
+
+
+
+.root{
+	@apply p-6;
+	
+	min-width: 260px;
+	background-color: $--bg_sidebar;
+
+	// ==============================
+	.logo{
+		@apply block mb-10;
+	}
+}

@@ -1,0 +1,14 @@
+@import '../../../assets//styles/variables';
+
+.root {
+	@apply w-full cursor-pointer p-3 text-sm;
+	
+	&:hover {
+		background-color: $light_gray;
+	}
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+	
+	
+}

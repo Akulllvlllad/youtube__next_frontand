@@ -1,0 +1,91 @@
+@import '../../../assets/styles/variables';
+
+//styles
+
+.root {
+	@apply flex flex-col p-5 rounded-md;
+	font-size: 1rem;
+	
+	transition: all 0.3s ease 0s;
+	&:hover{
+		background-color: rgba(0, 0, 0, 0.034);
+	}
+}
+
+.thumbnail {
+	@apply relative w-full;
+	padding-bottom: 56%;
+	.img {
+		@apply rounded-xl overflow-hidden;
+	}
+
+	.hot {
+		@apply absolute p-1 text-lg font-bold rounded-2xl left-2 top-2;
+
+		background-color: rgba(255, 255, 255, 0.726);
+	}
+	time {
+		@apply text-sm absolute rounded-sm text-white flex items-center justify-center font-bold;
+		left: 2%;
+		bottom: 4%;
+		font-size: 0.5em;
+		background-color: rgba(0, 0, 0, 0.705);
+
+		padding: 0.2em 1em;
+	}
+	.avatar {
+		@apply w-16 h-16 bottom-0 rounded-full overflow-hidden p-2 absolute;
+		width: 15%;
+		height: 27%;
+
+		right: 10%;
+		transform: translate(0, 50%);
+		border: 5px solid $--bg_page;
+	}
+}
+.author {
+		@apply text-base mt-4;
+	color: $--text_page;
+	font-size: 1em;
+}
+.name {
+	@apply text-base mt-4;
+	color: $--text_page;
+	font-weight: 600;
+	
+	
+}
+
+.number_info {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.views {
+	margin-left: 0;
+	font-size: 0.6em;
+	margin-left: 0;
+}
+.date {
+	font-size: 0.6em;
+}
+
+
+
+.name{
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+	height: 20px;
+}
+
+
+.description {
+	height: 100px;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		
+	}

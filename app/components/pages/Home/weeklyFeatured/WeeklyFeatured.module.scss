@@ -1,0 +1,42 @@
+@import '../../../../assets/styles/variables';
+
+
+.root {
+	@apply overflow-hidden  flex;
+	
+}
+
+.slider {
+	@apply w-1/2;
+}
+
+.random {
+	@apply w-1/2;
+}
+
+
+
+
+
+
+
+
+.weekly_text{
+	@apply mb-4 flex flex-col;
+	color: $--text_page;
+	background-color: rgba(0, 0, 0, 0.021);
+	padding: 1rem;
+	
+	gap: 1rem;
+	border-radius: 15px;
+	h2{
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+	h3{
+		font-size: 1.2rem;
+	}
+	p{
+		font-size: .8rem;
+	}
+}

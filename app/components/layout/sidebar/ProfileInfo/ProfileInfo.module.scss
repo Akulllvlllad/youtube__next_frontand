@@ -1,0 +1,34 @@
+@import '../../../../assets/styles/variables';
+
+
+
+
+
+
+
+.root {
+	@apply flex flex-col items-center ;
+}
+
+
+.img{
+	@apply w-40 h-40 relative rounded-full overflow-hidden;
+}
+
+.name{
+	@apply mt-6;
+	color: $--text_sidebar;
+}
+
+.location{
+	@apply mb-6;
+	color: $--text_sidebar;
+}
+
+.information{
+	color: $--text_sidebar;
+
+	.item{
+		@apply flex justify-between;
+	}
+}

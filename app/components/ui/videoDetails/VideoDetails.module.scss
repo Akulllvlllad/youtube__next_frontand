@@ -1,0 +1,62 @@
+@import '../../../assets//font/Fonts.scss';
+@import '../../../assets/styles/variables';
+.title {
+	font-family: 'YouTube';
+	font-weight: 600;
+}
+
+.root {
+	@apply rounded-xl p-3 mt-4;
+	background-color: $light_gray;
+	.title {
+		@apply -tracking-tighter text-xl;
+	}
+}
+
+.videoStatistics {
+	@apply flex justify-end;
+	.views{
+		@apply text-base;
+		font-family: 'YouTube';
+		font-weight: 600;
+		
+	}
+
+	
+}
+
+.img {
+	@apply h-14 w-14 relative rounded-full overflow-hidden;
+}
+
+.userStatistics {
+	@apply flex justify-between items-center;
+	.body {
+		@apply flex items-center gap-4;
+	}
+}
+
+.info {
+	h3 {
+		font-family: 'YouTube';
+		font-weight: 600;
+	}
+	p {
+		font-family: 'YouTube';
+		font-weight: 400;
+	}
+}
+
+.subscribe {
+	@apply px-3 pt-3 pb-4 text-white rounded-xl;
+	font-family: 'YouTube';
+	font-weight: 600;
+	background-color: $red;
+	transition: all 0.3s linear 0s;
+	&:hover {
+		@apply opacity-80;
+	}
+	&:active {
+		@apply opacity-60;
+	}
+}

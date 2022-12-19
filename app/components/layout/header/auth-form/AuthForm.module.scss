@@ -1,0 +1,29 @@
+.root {
+	@apply relative z-10;
+}
+
+.button {
+}
+
+.form {
+	@apply  shadow-block flex flex-col gap-3  p-4 absolute right-2  rounded-md w-96;
+
+	top: calc(100% + 1rem)
+}
+
+.hidden {
+		@apply animate-scaleIn ;
+		visibility: hidden
+}
+
+
+
+.register{
+	@apply opacity-40;
+	font-size:  0.8rem;
+}
+
+
+.buttonGroup{
+	@apply  flex  gap-3 justify-between mt-6;
+}

@@ -1,0 +1,43 @@
+.root{
+	@apply w-5/6 h-5/6 absolute left-1/2 top-1/2  rounded-xl;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.11);
+}
+
+
+
+
+
+
+
+.dropzone{
+	@apply w-full h-full flex justify-center items-center ;
+	
+}
+
+
+
+
+.icon{
+	@apply text-9xl;
+}
+
+.massage{
+	@apply flex;
+
+
+	
+}
+
+.active{
+	
+	.icon{
+		@apply text-blue-500 ;
+		
+	}
+}
+
+
+.photos{
+	@apply w-full h-full rounded-none;
+}

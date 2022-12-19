@@ -1,0 +1,36 @@
+@import '../../../../../../assets/styles/variables';
+
+.root {
+	@apply  bg-gray-200;
+	flex-basis: 33%
+	
+}
+
+.thumbnail {
+	@apply bg-gray-400 text-gray-500 flex items-center justify-center relative;
+	min-height: 200px;
+}
+
+.fileName{
+	color: $--text_modal;
+}
+
+.detailsItem {
+
+	@apply  p-4;
+	
+	span {
+		@apply flex flex-col;
+		&:first-child {
+			@apply  text-gray-400;
+		}
+		&:last-child {
+			@apply text-sm;
+			a {
+				@apply text-primary opacity-80;
+			}
+		}
+	}
+}
+
+

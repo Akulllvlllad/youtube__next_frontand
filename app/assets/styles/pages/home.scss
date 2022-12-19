@@ -1,0 +1,56 @@
+@import '../../font/Fonts.scss';
+
+html,body{
+	width: 100%;
+	min-height: 100%;
+	overflow-y: auto;
+}
+
+*{
+	font-family: 'YouTube';
+	font-weight: 300;
+}
+
+#youtube_main {
+	min-height: 100vh;
+	display: flex;
+}
+.content_wrapper{
+	height: calc(100% - 80px);
+}
+
+.content {
+	width: calc(100% - 260px);
+	background-color: $--bg_page;
+	color: black;
+}
+
+.wrapper_content {
+	display: flex;
+}
+
+.line {
+	background-color: $light_gray;
+	height: 1px;
+	width: 100%;
+	margin: 30px 0;
+}
+
+.home {
+	@apply w-full h-full;
+
+	&__container {
+		@apply container mx-auto h-full;
+	}
+
+	&__inner {
+		@apply flex justify-between py-10 h-full;
+	}
+	&__main {
+		@apply px-4;
+		width: 70%;
+	}
+	&__bar {
+		flex-basis: 30%;
+	}
+}

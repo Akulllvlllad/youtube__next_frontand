@@ -1,0 +1,131 @@
+@import '../../../assets/styles/variables';
+
+
+
+
+
+.root {
+	@apply w-full overflow-hidden relative bg-black;
+	max-height: 864px;
+	border-radius: 5px;
+
+	.player {
+		@apply w-full h-full;
+	}
+}
+
+.button {
+	@apply text-3xl text-white;
+	
+	&:hover{
+		@apply opacity-80;
+		color: $red;
+	}
+}
+
+.Bar {
+	@apply absolute z-10 left-0 bottom-0 w-full px-5 invisible pb-2;
+	background-color: rgba(0, 0, 0, 0.726);
+}
+
+.Bar__bottom {
+	@apply flex gap-4 items-center justify-between;
+}
+
+.controls {
+	@apply flex gap-4 items-center;
+}
+.range {
+	cursor: pointer;
+	width: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	overflow: hidden;
+	height: 7px;
+
+	&::-webkit-slider-runnable-track {
+		height: 7px;
+		background-color: rgb(192, 189, 189);
+	}
+
+	&::-moz-range-track {
+		height: 7px;
+		background-color: rgb(192, 189, 189);
+	}
+
+	&::-webkit-slider-thumb {
+		@apply w-0 h-0;
+
+		cursor: pointer;
+
+		-webkit-appearance: none !important;
+
+		box-shadow: -10000px 0 0 10000px red;
+	}
+	&::-moz-range-thumb {
+		@apply w-0 h-0;
+
+		cursor: pointer;
+		-webkit-appearance: none !important;
+		box-shadow: -10000px 237px 0 10000px red;
+	}
+}
+
+.volume {
+	@apply w-24;
+	
+}
+
+.Bar__button{
+	@apply flex gap-3;
+}
+
+.togglePlay{
+	@apply absolute left-1/2 top-1/2 text-7xl;
+	transform: translate(-50%, -50%);
+	color: $red;
+}
+
+
+.pause{
+	@apply invisible;
+	
+}
+.repeatOn{
+	
+	color: $red;
+}
+
+
+.root {
+	&:hover {
+		.Bar {
+			@apply visible;
+		}
+		.pause{
+			@apply visible;
+		}
+	}
+}
+
+
+
+
+.range_wrapper{
+	@apply relative h-1 w-full mt-4 mb-1;
+	background-color: #464646;
+	.range{
+		@apply absolute h-full w-full z-50 opacity-0;
+	}
+	.progress{
+		@apply absolute h-full  w-12 z-20 ;
+		background-color: #FF0000;
+
+	}
+}
+.buffered{
+	@apply absolute h-full  w-12 ;
+	background-color: #919191;
+}

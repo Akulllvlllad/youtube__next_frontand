@@ -1,0 +1,45 @@
+@import '../../../assets/styles/variables';
+
+.root {
+	@apply py-4 px-6 w-full grid;
+	background-color: $--bg_header;
+	border-bottom: 1px solid $light_gray;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.search_wrapper {
+	@apply mx-auto relative w-full;
+	grid-area: 1 / 1 / 2 / 5;
+	
+}
+
+.search {
+	@apply relative block;
+
+	.input {
+		background-color: $--bg_sidebar;
+		@apply rounded-3xl py-2 px-4 w-full block;
+		border: 1px solid $light_gray;
+		transition: box-shadow 0.4s ease;
+		color: $--text_header;
+		&::placeholder {
+			@apply opacity-80 italic;
+		}
+
+		&:focus {
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.04);
+		}
+	}
+	.img {
+		@apply absolute right-4 top-2.5;
+
+		max-width: 15px;
+	}
+}
+
+.result {
+	@apply shadow-block animate-scaleIn flex flex-wrap justify-center absolute z-10 w-full rounded-xl py-5 gap-2 top-12 left-0;
+	border: 2px solid #005499;
+	overflow-y: auto;
+	max-height: 500px;
+}

@@ -1,0 +1,25 @@
+@import '../../../../../assets/styles/variables';
+
+
+
+.root {
+	@apply py-3;
+	background-color: $--bg_modal;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5%;
+	
+}
+
+.fields {
+	@apply text-lg flex flex-col gap-20;
+	color: $--text_modal;
+	flex-basis: 61%;
+
+}
+
+.thumbnailZone{
+	position: relative;
+	background-color: white;
+}
+

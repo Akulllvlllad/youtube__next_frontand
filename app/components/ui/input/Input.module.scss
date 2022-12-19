@@ -1,0 +1,19 @@
+$grey: '#797979';
+
+
+.input{
+		@apply relative  block  ;
+		input{
+			@apply py-2 w-full  border-b bg-inherit  px-3 ;
+
+			&::placeholder{
+			color: $grey;
+		}
+		}
+		
+}
+
+.error{
+	@apply absolute -bottom-4 left-0 text-sm w-full text-primary;
+	font-size: 0.6rem;
+}

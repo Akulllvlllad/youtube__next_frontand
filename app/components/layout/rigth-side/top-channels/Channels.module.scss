@@ -1,0 +1,29 @@
+.list {
+	@apply flex flex-col gap-4;
+}
+.title {
+	@apply text-base font-semibold mb-8;
+}
+
+.channel {
+	@apply flex gap-4 justify-between text-end p-2 rounded-md cursor-pointer;
+	transition: all 0.3s linear 0s;
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.178);
+	}
+	.img {
+		@apply relative h-10 w-10 rounded-full overflow-hidden;
+	}
+	.bg {
+		@apply bg-black w-full h-full;
+	}
+}
+
+.info {
+	.name {
+		@apply text-base font-semibold;
+	}
+	.subs {
+		@apply text-xs;
+	}
+}

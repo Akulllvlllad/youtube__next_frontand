@@ -1,0 +1,20 @@
+$grey: '#797979';
+
+
+.root{
+		@apply relative  block  ;
+		textarea{
+			@apply py-2 w-full  border-b bg-inherit  px-3 resize-none;
+			min-height: 200px;
+
+			&::placeholder{
+			color: $grey;
+		}
+		}
+		
+}
+
+.error{
+	@apply absolute -bottom-4 left-0 text-sm w-full text-primary;
+	font-size: 0.6rem;
+}

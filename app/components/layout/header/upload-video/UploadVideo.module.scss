@@ -1,0 +1,52 @@
+.modalWrapper{
+	@apply fixed h-full w-full left-0 top-0 flex justify-center items-center z-50;
+	
+	
+	
+	
+	backdrop-filter: blur(4px);
+	background-color: rgba(0, 0, 0, 0.637)
+}
+
+
+
+
+.close{
+	@apply absolute right-0 top-0 bg-white rounded-full;
+	transition: all 0.3s linear 0s;
+	transform: translate(30%, -30%);
+	svg{
+		@apply text-5xl;
+		color: rgb(185, 0, 0);
+		
+	}
+	&:hover{
+		
+		background-color: rgb(185, 0, 0);
+		svg{
+			@apply text-white;
+		}
+	}
+	&:active{
+		opacity: 0.8;
+		background-color: rgb(185, 0, 0);
+		svg{
+			@apply text-white;
+		}
+	}
+}
+
+
+
+.modal{
+	@apply rounded-md;
+	background-color: white;
+	width:90vw;
+	max-width: 1000px;
+	height: 80vh;
+	max-height: 1000px;
+	min-height: 600px;
+	padding: 20px ;
+	position: relative;
+	
+}

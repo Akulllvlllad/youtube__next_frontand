@@ -1,0 +1,44 @@
+@import '../../../../../../assets/styles/variables';
+
+.root {
+	@apply absolute left-0 bottom-0 w-full p-4 flex justify-between items-center;
+}
+
+.status-panel {
+	@apply flex items-center gap-2;
+	span {
+		@apply ml-10 font-bold;
+		color: $--text_modal;
+	}
+}
+
+.upload-icon,
+.check-icon {
+	@apply text-3xl;
+}
+.check-icon {
+	@apply opacity-100;
+	color: green;
+}
+.upload-icon {
+	color: grey;
+}
+
+//======================================
+
+.processing {
+	.upload-icon {
+		@apply animate-pulse;
+		color: rgb(196, 7, 7);
+	}
+
+	span {
+		@apply animate-pulse ;
+		
+
+	}
+	.check-icon {
+		@apply opacity-20;
+		color: grey;
+	}
+}

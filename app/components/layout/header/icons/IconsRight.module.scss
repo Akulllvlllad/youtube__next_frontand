@@ -1,0 +1,15 @@
+.icons {
+	@apply absolute;
+	
+	top: 19px;
+	right: 25px;
+	@apply flex gap-4;
+	
+
+	svg{
+
+		
+		font-size: 2rem;
+	}
+
+}
