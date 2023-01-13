@@ -40,7 +40,7 @@ export const AddCommentsForm: React.FC<{ videoId: string; refetch: any }> = ({
 				{...register('massage', {
 					required: 'massage is required',
 				})}
-				// @ts-ignore
+				
 				placeholder='Massage'
 				error={errors.massage}
 			/>
